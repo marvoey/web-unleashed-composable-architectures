@@ -10,5 +10,6 @@ export default defineStackbitConfig({
             previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN!,
             accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN!
         })
-    ]
+    ],
+    modelExtensions: [{ name: 'page', type: 'page', urlPath: '/{slug}' }]
 });
